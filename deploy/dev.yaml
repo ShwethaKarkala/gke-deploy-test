@@ -1,0 +1,11 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: dev
+  annotations: {}
+  labels: {}
+description: dev
+gke:
+  cluster: projects/ust-edgeops-dagility-dev/locations/asia-south1/clusters/app-cluster-1
+serviceAccount: sftp-tf-iac-sa@ust-edgeops-dagility-dev.iam.gserviceaccount.com
+
